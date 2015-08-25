@@ -14,7 +14,11 @@ class MainSection extends Component {
         console.log(actions);
         return (
             <ul>
-                {todos.map(item=>(<TodoItem todo={item} deleteTodo={actions.deleteTodo} />))}
+                {todos.map(item=>(<TodoItem
+                    todo={item}
+                    deleteTodo={actions.deleteTodo}
+                    editTodo={actions.editTodo}
+                    />))}
             </ul>
         )
     }
