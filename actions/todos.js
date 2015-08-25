@@ -11,3 +11,15 @@ export function deleteTodo(id) {
 export function editTodo(id, text) {
     return {type: types.EDIT_TODO, id, text};
 }
+
+export function toggleTodo(id) {
+    return {type: types.TOGGLE_TODO, id};
+}
+
+export function toggleAll(checked) {
+    return {type: types.TOGGLE_ALL, checked};
+}
+
+export function clearCompleted(){
+    return {type: types.CLEAR_COMPLETED}
+}
